@@ -1,0 +1,21 @@
+{
+  "name": "ASF UNIBEN/UBTH",
+  "short_name": "ASF",
+  "description": "Anglican Students' Fellowship — University of Benin / UBTH. Arise, Shine!",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FBF6EE",
+  "theme_color": "#7A1D1D",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
