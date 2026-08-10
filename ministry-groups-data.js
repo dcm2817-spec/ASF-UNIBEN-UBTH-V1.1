@@ -14,12 +14,10 @@ const MINISTRY_GROUPS = [
   },
   {
     code: 'CPAM', name: 'Church Pastoral Aid Ministry',
-    summary: 'Discipleship, counselling and school visitation, run through four units.',
+    summary: 'Discipleship and counselling.',
     details: [
       'Discipleship Unit — teaches new converts and runs Bible study classes with the Bible Study Secretary.',
       'Counselling Unit — trains counsellors and provides spiritual counselling.',
-      'School Visitation Unit — visits schools for evangelism and pastoral work.',
-      'Anglican Baptism, Confirmation & Discipleship Unit — disciples new converts and teaches Bible study.',
     ],
   },
   {
@@ -52,9 +50,8 @@ const MINISTRY_GROUPS = [
     code: 'APM', name: 'Anglican Press Ministry',
     summary: 'Christian literature, writing and the fellowship library.',
     details: [
-      'Spreads the teachings of Christ through tracts, bibles and study materials.',
       'Cares for the fellowship library.',
-      'Raises funds through sale of Christian literature, notebooks and magazines.',
+      'Raises funds through sale of Christian literature, and magazines.',
       'Provides a forum for members\u2019 writing talents.',
       'Encourages persecuted Christians through correspondence.',
     ],
