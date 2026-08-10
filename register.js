@@ -24,7 +24,6 @@ function setMode(newMode) {
     : 'Sign in to access ministry groups, Ask ASF and more.';
   document.getElementById('submit-btn').textContent = mode === 'register' ? 'Create account' : 'Sign in';
   document.getElementById('forgot-link-wrap').style.display = mode === 'signin' ? 'block' : 'none';
-  // Toggle required on hidden fields so the browser doesn't block submit
   registerOnlyFields.forEach((el) => {
     el.querySelectorAll('input, select').forEach((input) => {
       input.required = mode === 'register';
@@ -75,23 +74,23 @@ document.getElementById('register-form').addEventListener('submit', async (e) =>
 
   try {
     if (mode === 'register') {
-      const { data, error } = await sb.auth.signUp({ email, password });
+      const { data, error } = await sb.auth.signUp({
+        email,
+        password,
+        options: {
+          data: {
+            full_name: document.getElementById('fullName').value,
+            department: document.getElementById('department').value,
+            level: document.getElementById('level').value,
+            date_of_birth: document.getElementById('dob').value || '',
+            location: document.getElementById('location').value,
+            ministry_group: document.getElementById('ministryGroup').value,
+          },
+        },
+      });
       if (error) throw error;
-
-      const userId = data.user ? data.user.id : null;
-      if (userId) {
-        const { error: profileError } = await sb.from('members').insert({
-          id: userId,
-          full_name: document.getElementById('fullName').value,
-          department: document.getElementById('department').value,
-          level: document.getElementById('level').value,
-          date_of_birth: document.getElementById('dob').value || null,
-          location: document.getElementById('location').value,
-          ministry_group: document.getElementById('ministryGroup').value,
-          email: email,
-        });
-        if (profileError) throw profileError;
-      }
+      // The database trigger (on_auth_user_created) creates the members row
+      // automatically from this metadata — no separate insert needed here.
     } else {
       const { error } = await sb.auth.signInWithPassword({ email, password });
       if (error) throw error;
