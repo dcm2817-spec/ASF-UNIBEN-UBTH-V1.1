@@ -1,201 +1,162 @@
 const FAQ = [
-  // ---------- Identity & core info ----------
-  {
-    keywords: ['what is asf', 'about asf', 'who are you', 'what is the fellowship', 'what does asf stand for'],
-    answer: "ASF stands for Anglican Students' Fellowship. ASF UNIBEN/UBTH is a Christian fellowship for students of the University of Benin and UBTH, within the Anglican Communion (Church of Nigeria).",
-  },
-  {
-    keywords: ['motto', 'slogan'],
-    answer: 'Our motto is "Arise, Shine!" — Isaiah 60 verse 1.',
-  },
-  {
-    keywords: ['vision', 'mission', 'ancient landmark'],
-    answer: 'Our vision is "Restoring the Ancient Landmark" (Proverbs 22:28, Jeremiah 6:16) — calling students back to a genuine, historic Christian faith within the Anglican tradition.',
-  },
-  {
-    keywords: ['doctrine', 'doctrinal basis', 'what do you believe', 'beliefs', 'creed'],
-    answer: 'We hold to the biblical faith expressed in the Apostles\u2019 Creed, the Nicene Creed and the Thirty-Nine Articles — emphasising a personal knowledge of God, Jesus Christ as Lord and Saviour, and the infilling and work of the Holy Spirit.',
-  },
-  {
-    keywords: ['emblem', 'logo', 'symbol', 'meaning of the colors', 'meaning of colours', 'what does the logo mean'],
-    answer: 'The emblem shows an open Bible (the Word of God), a Cross (Christ\u2019s death), a rising sun (our motto, Arise Shine!), and an academic cap (academic excellence). Ox-blood on white represents sanctity through Christ\u2019s blood, and the circle represents a global vision.',
-  },
+  // ---------- Identity ----------
+  { keywords: ['what is asf', 'about asf', 'who are you', 'what is the fellowship', 'what does asf stand for'],
+    answer: "ASF stands for Anglican Students' Fellowship. ASF UNIBEN/UBTH is a Christian fellowship for students of the University of Benin and UBTH, within the Anglican Communion." },
+  { keywords: ['motto', 'slogan'],
+    answer: 'Our motto is "Arise, Shine!" — Isaiah 60 verse 1.' },
+  { keywords: ['epithet', 'glorious family', 'nickname'],
+    answer: 'ASF’s epithet is "The Glorious Family."' },
+  { keywords: ['original motto', 'first motto', 'old motto'],
+    answer: 'At inception, ASF Uniben/UBTH’s motto was "Equipping the saints for the work of the ministry." It was changed to "Arise, Shine!" in 1997, in line with the national constitution.' },
+  { keywords: ['vision', 'mission', 'ancient landmark'],
+    answer: 'Our vision is "Restoring the Ancient Landmark" (Proverbs 22:28, Jeremiah 6:16).' },
+  { keywords: ['aims', 'objectives', 'purpose of asf'],
+    answer: 'ASF exists to bring Anglican and non-Anglican students together for spiritual maturity and academic excellence, to keep students active in local churches during and after their studies, and to reconcile people to God through soul-winning.' },
+  { keywords: ['doctrine', 'doctrinal basis', 'what do you believe', 'beliefs', 'creed'],
+    answer: 'We hold to the biblical faith expressed in the Apostles’ Creed, the Nicene Creed and the Thirty-Nine Articles of Religion — emphasising personal knowledge of God, Jesus Christ as Lord and Saviour, and the infilling and work of the Holy Spirit.' },
+  { keywords: ['emblem', 'logo', 'symbol', 'meaning of the colors', 'meaning of colours', 'what does the logo mean'],
+    answer: 'The emblem shows an open Bible (the Word of God), a Cross (Christ’s substitutionary death), a rising sun (our motto, Arise Shine!) and an academic cap (academic excellence), all in a circle (a global vision). Ox-blood on white represents sanctity through Christ’s blood.' },
+  { keywords: ['summary of asf', 'in a nutshell', 'sum up asf'],
+    answer: 'In the constitution’s own words: "Christian students, saved through the death of Christ, excelling in their academics and shining forth in the proclamation of the word of God to the whole world."' },
+  { keywords: ['secret cult', 'cultism'],
+    answer: 'No member of ASF may belong to any secret cult, no matter its stated aims or objectives.' },
+  { keywords: ['relation to other churches', 'other denominations', 'affiliation'],
+    answer: 'ASF is independent but cooperates with other Youth organisations within the Anglican Communion, and with any group that upholds its doctrinal basis. Branches work closely with their neighbouring Anglican churches and Diocese.' },
+  { keywords: ['fellowship year'],
+    answer: 'The fellowship year runs from the beginning of the First Semester to the end of the Second Semester of the same academic session.' },
+
+  // ---------- National ASF ----------
+  { keywords: ['national asf', 'asf nigeria', 'primate', 'when was asf nigeria founded'],
+    answer: 'ASF Nigeria was conceived in 1997, received its official name on 2 May 1997, and was inaugurated on 21 November 1999 by The Most Rev. J. Abiodun, Primate of Nigeria. Late Ven. Olu Oshewa was among those who helped lay its foundation.' },
+  { keywords: ['zones', 'how many zones'],
+    answer: 'ASF Nigeria has four zones: the Eastern Zone, Western Zone, Northern Zone, and Southern Zone.' },
+  { keywords: ['asfaan', 'jnec', 'nec', 'zec', 'cec', 'bec', 'hierarchy', 'national structure'],
+    answer: 'ASF’s national leadership hierarchy, from top to bottom, is: ASFAAN (Alumni Association Nigeria), JNEC (Joint National Executive Committee), NEC (National Executive Committee), ZEC (Zonal Executive Committee), CEC (Chapter Executive Committee), and BEC (Branch Executive Committee).' },
+  { keywords: ['grand patron', 'national chaplain'],
+    answer: 'ASF Nigeria’s Grand Patron is His Grace, Most Rev’d Henry Chukwudum Ndukuba, Metropolitan Primate of the Church of Nigeria. The National Chaplain is the Rt Rev’d, Bishop of the Diocese of Jalingo.' },
+  { keywords: ['how many branches', 'branches nationwide'],
+    answer: 'ASF has over 100 branches across higher institutions in Nigeria.' },
 
   // ---------- History ----------
-  {
-    keywords: ['when was asf formed', 'history', 'founded', 'founding', 'who founded'],
-    answer: 'ASF UNIBEN/UBTH was formed in April 1994, started independently by Bro. Jude Edomwonyi (Anglican Students\u2019 Fellowship) and Bro. Kingsley Egwuonwu (Anglican Youth Fellowship) — both later ordained as priests in the Anglican Communion.',
-  },
-  {
-    keywords: ['national asf', 'asf nigeria', 'primate'],
-    answer: 'ASF UNIBEN/UBTH is part of the wider Anglican Students\u2019 Fellowship (ASF) Nigeria, which began nationally in 1997 under The Most Rev. J. Abiodun, Primate of Nigeria.',
-  },
-  {
-    keywords: ['anthem', 'theme song', 'we are one family'],
-    answer: 'The fellowship\u2019s anthem, "We Are One Family," was adopted in 1999.',
-  },
-  {
-    keywords: ['milestone', 'keyboard', 'drum set'],
-    answer: 'Early milestones in the fellowship\u2019s history include its first keyboard (1997) and its first drum set (1998).',
-  },
+  { keywords: ['when was asf formed', 'history', 'founded', 'founding', 'who founded', 'formation'],
+    answer: 'ASF Uniben/UBTH was formed in April 1994 to bridge the gap between youth and adults in the Anglican Communion, and to give Anglican students on campus a fellowship of their own rather than losing them to other campus fellowships.' },
+  { keywords: ['bro jude', 'bro kingsley', 'edomwonyi', 'egwuonwu', 'founding fathers'],
+    answer: 'Two young men caught the vision independently in 1994: Bro. Jude Edomwonyi started a fellowship called Anglican Students’ Fellowship, and Bro. Kingsley Egwuonwu started one called Anglican Youth Fellowship. Both are now priests in the Anglican Communion.' },
+  { keywords: ['first president', 'megaphone'],
+    answer: 'ASF Uniben/UBTH’s first President was Rev. K.O. Egwuonwu, who donated the fellowship’s first public address system — a megaphone.' },
+  { keywords: ['anthem', 'theme song', 'we are one family', 'fellowship song'],
+    answer: 'The fellowship song, "We Are One [Family]," was adopted in 1999.' },
+  { keywords: ['hymn'],
+    answer: 'ASF’s special hymn is "Come Labour On!" (Hymns Ancient and Modern, 339).' },
+  { keywords: ['psalm'],
+    answer: 'ASF’s special psalm is Psalm 15, "Lord, who shall dwell in thy tabernacle."' },
+  { keywords: ['milestone', 'keyboard', 'drum set', 'important dates'],
+    answer: 'Key milestones: first keyboard (1997, from 2nd Gift and Thanksgiving Day proceeds), first drum set (1998, from the fellowship’s first student mini-launching), first "Great Rescue" revival (1995), first Gift Day (1996), first Sisters’ Fellowship (1998), first Music Nite "Glorious Crescendo" (1998), and first Brothers’ Day (1999).' },
 
   // ---------- Membership ----------
-  {
-    keywords: ['join', 'become a member', 'how do i register', 'membership', 'sign up', 'who can join'],
-    answer: 'Membership is open to all students of UNIBEN and UBTH — you don\u2019t need to already be Anglican. Register on the site with your name, department, level, date of birth and location, and pick a ministry group. Every member joins at least one, and at most two, ministry groups.',
-  },
-  {
-    keywords: ['not anglican', 'other denomination', 'do i need to be anglican'],
-    answer: 'No — ASF welcomes students from any Christian background, not just those raised Anglican. What matters is a sincere Christian faith and willingness to grow.',
-  },
-  {
-    keywords: ['change ministry group', 'switch group', 'leave a ministry group'],
-    answer: 'You can belong to at most two ministry groups at a time. To change or add a group, speak with the Welfare Secretary or your ministry group\u2019s leader — this isn\u2019t currently a self-service option on the site.',
-  },
-  {
-    keywords: ['is my information private', 'data privacy', 'who sees my details', 'who can see my data'],
-    answer: 'Your date of birth and location are only visible to the two site admins (GS and AGS) for member records — they aren\u2019t shown publicly. The public Leadership page only shows names, positions and photos of leaders who\u2019ve consented to appear there.',
-  },
-  {
-    keywords: ['alumni', 'graduated', 'no longer a student'],
-    answer: 'ASF has an Alumni Representative role on the Central Executive Committee to keep graduated members connected to the fellowship.',
-  },
+  { keywords: ['join', 'become a member', 'how do i register', 'membership', 'sign up', 'who can join'],
+    answer: 'Membership is open to all students of the University and Teaching Hospital community — you don’t need to already be Anglican. Register on the site with your name, department, level, date of birth and location, and pick a ministry group.' },
+  { keywords: ['not anglican', 'other denomination', 'do i need to be anglican'],
+    answer: 'No — the constitution explicitly welcomes both Anglican and non-Anglican students.' },
+  { keywords: ['activities', 'what does asf do', 'what happens at meetings'],
+    answer: 'ASF’s activities include talks, Bible studies, prayer meetings, personal and mass evangelistic outreaches, and the activities of the various ministry groups.' },
+  { keywords: ['change ministry group', 'switch group', 'leave a ministry group'],
+    answer: 'Every member must belong to at least one, and at most two, ministry groups. To change or add a group, speak with your ministry group’s leader — this isn’t currently self-service on the site.' },
+  { keywords: ['is my information private', 'data privacy', 'who sees my details', 'who can see my data'],
+    answer: 'Your date of birth and location are only visible to the site admins (GS and AGS) for member records — not shown publicly.' },
 
-  // ---------- Ministry groups (general + one per group) ----------
-  {
-    keywords: ['ministry group', 'ministry groups', 'what groups', 'units', 'how many ministry groups'],
-    answer: 'ASF has fifteen ministry groups and units covering prayer, outreach, discipleship, music, drama, press, stewardship, children\u2019s ministry, ushering, media, decoration, transport, and care & visitation. See the Ministry Groups page for the full list.',
-  },
-  {
-    keywords: ['intercessory', 'prayer group', 'aim ministry'],
-    answer: 'The Anglican Intercessory Ministry (AIM) leads prayer and intercession for the fellowship, working with the Prayer Secretary.',
-  },
-  {
-    keywords: ['campus and city outreach', 'outreach group', 'cco'],
-    answer: 'Campus & City Outreach (CCO) handles evangelism within and outside the campus.',
-  },
-  {
-    keywords: ['pastoral aid', 'cpam', 'discipleship unit', 'counselling unit', 'school visitation'],
-    answer: 'The Church Pastoral Aid Ministry (CPAM) runs discipleship classes, counselling, school visitation, and baptism/confirmation teaching, through four internal units.',
-  },
-  {
-    keywords: ['children ministry', 'sunday school', 'acm'],
-    answer: 'The Anglican Children Ministry (ACM) evangelises to and teaches children, including primary school visits and Sunday school work.',
-  },
-  {
-    keywords: ['music ministry', 'choir', 'instrumentalist', 'amm'],
-    answer: 'The Anglican Music Ministry (AMM) is the fellowship\u2019s choir — training instrumentalists, composing songs, and ministering through music on and off campus.',
-  },
-  {
-    keywords: ['drama ministry', 'adm', 'sketch', 'play'],
-    answer: 'The Anglican Drama Ministry (ADM) ministers the gospel through drama — writing and performing plays on and off campus.',
-  },
-  {
-    keywords: ['press ministry', 'apm', 'library', 'tract', 'literature'],
-    answer: 'The Anglican Press Ministry (APM) spreads Christian literature, cares for the fellowship library, and provides a platform for members\u2019 writing.',
-  },
-  {
-    keywords: ['stewardship ministry', 'asm', 'fundraising'],
-    answer: 'The Anglican Stewardship Ministry (ASM) organises fundraising for the fellowship throughout the year.',
-  },
-  {
-    keywords: ['ministry of helps', 'amh', 'hospital visit', 'orphanage'],
-    answer: 'The Anglican Ministry of Helps (AMH) visits hospitals, orphanages and remand homes to share the gospel and provide material aid.',
-  },
-  {
-    keywords: ['masus', 'usher', 'sidemen', 'server'],
-    answer: 'The Ministry of Anglican Sidemen, Ushers & Servers (MASUS) keeps meetings running smoothly — welcoming visitors and serving as ushers.',
-  },
-  {
-    keywords: ['publicity unit', 'press release', 'poster'],
-    answer: 'The Publicity Unit handles publicity for fellowship activities — press releases, posters, and notice boards — working with the Publicity Secretary.',
-  },
-  {
-    keywords: ['technical unit', 'media unit', 'tmu', 'sound', 'equipment'],
-    answer: 'The Technical and Media Unit (TMU) maintains fellowship equipment, sets up for meetings, and covers events on media.',
-  },
-  {
-    keywords: ['aesthetic unit', 'decoration', 'decor'],
-    answer: 'The Aesthetic Unit decorates and arranges venues for fellowship activities.',
-  },
-  {
-    keywords: ['transport unit', 'vehicle'],
-    answer: 'The Transport Unit maintains fellowship vehicles and arranges transportation for activities.',
-  },
-  {
-    keywords: ['care and visitation', 'cvu', 'welfare visit', 'sick visit'],
-    answer: 'The Care and Visitation Unit (CVU) follows up with new and existing members, visits the sick, and registers new members.',
-  },
+  // ---------- EXCO structure & roles ----------
+  { keywords: ['leader', 'exco', 'executive committee', 'who runs asf', 'exco members', 'exco positions'],
+    answer: 'The Executive Committee (EXCO) has 20 positions: President, 1st VP (Ekehuan), 2nd VP (Ugbowo), General Secretary, Assistant General Secretary, Treasurer, Financial Secretary, Prayer Secretary, Bible Study Secretary, Evangelism Secretary, Organizing Secretary, Publicity Secretary, Academic Secretary, Welfare Secretary/Brothers’ Coordinator, Welfare Secretary/Sisters’ Coordinator, Part-time Students’ Coordinator, UBTH Coordinator, Mission Secretary, Transport Secretary, and Alumni Representative.' },
+  { keywords: ['what does the president do', 'president role', 'president function'],
+    answer: 'The President is the highest officer and EXCO Chairman — directs EXCO meetings, leads and coordinates all fellowship activities, presents the annual budget, convenes meetings through the GS, and represents the fellowship within and outside campus.' },
+  { keywords: ['first vice president', 'vp1', 'vice president ekehuan'],
+    answer: 'The First Vice President resides in Ekehuan Campus or its environs, and supervises/coordinates fellowship activities there, reporting to the President.' },
+  { keywords: ['second vice president', 'vp2', 'vice president ugbowo'],
+    answer: 'The Second Vice President resides in Ugbowo Campus, supervises activities there, and coordinates the Ministry Groups on behalf of the President.' },
+  { keywords: ['what does the general secretary do', 'gs role', 'gs function'],
+    answer: 'The General Secretary runs the Secretariat, summons meetings and takes minutes, prepares meeting agendas, invites approved speakers, gives fellowship announcements, and handles official correspondence.' },
+  { keywords: ['what does the assistant general secretary do', 'ags role', 'ags function'],
+    answer: 'The Assistant General Secretary assists the GS with secretariat duties, manages mail and the fellowship’s post office box, and ensures the registration of new members — which is exactly what this website’s registration flow supports.' },
+  { keywords: ['what does the treasurer do', 'treasurer role'],
+    answer: 'The Treasurer collects monies from the Financial Secretary, issues receipts, banks fellowship funds within 7 days, pays EXCO-authorised claims, and keeps an impress account set by the EXCO.' },
+  { keywords: ['what does the financial secretary do', 'financial secretary role'],
+    answer: 'The Financial Secretary receives all monies collected at meetings, keeps proper records, hands funds to the Treasurer within 48 hours, and presents an annual financial report at the end of their tenure.' },
+  { keywords: ['what does the prayer secretary do', 'prayer secretary role'],
+    answer: 'The Prayer Secretary plans the fellowship’s prayer programmes, represents ASF at prayer conferences/seminars, and works toward the spiritual soundness of members’ prayer lives and prayer cells.' },
+  { keywords: ['what does the bible study secretary do', 'bible study secretary role', 'bss role'],
+    answer: 'The Bible Study Secretary draws up Bible study outlines with the Church Pastoral Aid Ministry (CPAM) and supervises the fellowship’s Bible study meetings.' },
+  { keywords: ['what does the evangelism secretary do', 'evangelism secretary role'],
+    answer: 'The Evangelism Secretary plans and supervises evangelistic programmes across Ugbowo and Ekehuan, and oversees the "Catch Them Young" (CTY) programme.' },
+  { keywords: ['what does the organizing secretary do', 'organizing secretary role'],
+    answer: 'The Organizing Secretary arranges meeting venues (with TMU and the Aesthetic Unit), applies for and collects needed equipment, and supervises TMU and AU.' },
+  { keywords: ['what does the publicity secretary do', 'publicity secretary role'],
+    answer: 'The Publicity Secretary plans fellowship publications, acts as image-maker and spokesperson, and works with the Anglican Press Ministry and Publicity Unit on press releases, handbills, posters and notice boards.' },
+  { keywords: ['what does the academic secretary do', 'academic secretary role'],
+    answer: 'The Academic Secretary models academic excellence, organises study/discussion groups, provides academic welfare (counselling, past questions, textbooks), and evaluates members’ study habits through interviews and seminars.' },
+  { keywords: ['welfare secretary brothers', 'brothers coordinator'],
+    answer: 'The Welfare Secretary/Brothers’ Coordinator coordinates Hall Representatives with the Sisters’ Coordinator, handles brothers’ and visitors’ welfare, and runs the Brothers’ Forum.' },
+  { keywords: ['welfare secretary sisters', 'sisters coordinator'],
+    answer: 'The Welfare Secretary/Sisters’ Coordinator coordinates Hall Representatives with the Brothers’ Coordinator, handles sisters’ and visitors’ welfare, and runs the Sisters’ Forum.' },
+  { keywords: ['part-time students coordinator', 'part time coordinator'],
+    answer: 'The Part-time Students’ Coordinator must be a part-time student themself, and coordinates fellowship activities among part-time students.' },
+  { keywords: ['ubth coordinator role', 'what does the ubth coordinator do'],
+    answer: 'The UBTH Coordinator is elected from any UBTH school, reports to the President on day-to-day activities and welfare in UBTH schools, and resides in UBTH hostels or environs.' },
+  { keywords: ['mission secretary'],
+    answer: 'The Mission Secretary plans and leads fellowship missions to local congregations, nurtures missionary candidates, links ASF with mission societies, encourages chapel planting, and promotes village outreaches.' },
+  { keywords: ['transport secretary'],
+    answer: 'The Transport Secretary cares for and maintains fellowship vehicles and arranges transportation for fellowship activities.' },
+  { keywords: ['alumni representative role'],
+    answer: 'The Alumni Representative is the liaison officer between the Alumni body and the fellowship.' },
 
-  // ---------- Leadership & structure ----------
-  {
-    keywords: ['leader', 'exco', 'president', 'executive', 'who runs asf'],
-    answer: 'You can see the full Central Executive Committee (EXCO) and ministry group leaders, with photos as they come in, on the Leadership page.',
-  },
-  {
-    keywords: ['hall rep', 'hall representative', 'male hall', 'female hall'],
-    answer: 'ASF has Male and Female Hall Representatives who coordinate members within their respective halls of residence.',
-  },
-  {
-    keywords: ['bdpa', 'ekosodin', 'ubth coordinator', 'ekhuewan', 'satellite'],
-    answer: 'Beyond the main campus, ASF has coordinators for BDPA, Ekosodin, UBTH and Ekhuewan — students in those areas have a dedicated point of contact. See the Leadership page for who\u2019s currently serving.',
-  },
-  {
-    keywords: ['chaplain'],
-    answer: 'The fellowship has a Chaplain appointed by the Diocese who guides the fellowship spiritually and links it with the Diocese, for a renewable four-year term.',
-  },
-  {
-    keywords: ['how do i become a leader', 'run for position', 'election', 'nomination'],
-    answer: 'Leadership positions go through a nomination and election process at the appropriate time in the fellowship calendar. Completing the Discipleship Study Series (DSS) is a requirement for eligibility. Speak with the current GS/AGS for specifics on timing.',
-  },
+  // ---------- Leadership qualifications & elections ----------
+  { keywords: ['how do i become a leader', 'run for position', 'qualify for leadership', 'exco qualification'],
+    answer: 'To qualify for an EXCO position you must: be a full-time UNIBEN/UBTH student (except the Part-time Coordinator role), have been a registered member for at least 6 months, be active in your ministry group for 4 months, have completed the Discipleship Study Series (DSS), and pass screening/interview after nomination.' },
+  { keywords: ['ministry group leader qualification', 'hall rep qualification'],
+    answer: 'To become a ministry group leader or Hall Representative: be a properly admitted UNIBEN/UBTH student, have completed the DSS, have been active in that ministry group for at least 4 months, and pass nomination/interview. Hall Reps must also reside in the hall they represent.' },
+  { keywords: ['dss', 'discipleship study series'],
+    answer: 'The Discipleship Study Series (DSS) is a foundational study track — completing it is a requirement for any leadership position, EXCO or ministry group.' },
+  { keywords: ['election', 'nomination', 'how are leaders elected'],
+    answer: 'Leaders are elected at the Annual Fellowship Meeting (AFM) by an Electoral Committee. Nominations happen up to 2 weeks before election; at least 10 nominees beyond the number of open offices go forward to a vote; screening/interviews follow; voting is by secret ballot; results are released within a week.' },
+  { keywords: ['electoral committee'],
+    answer: 'The Electoral Committee has 3 members appointed by the outgoing EXCO: a non-eligible outgoing EXCO member, a non-eligible non-EXCO fellowship member, and a senior friend. They can co-opt others (eligible members with 2+ sessions, alumni, senior friends) to help.' },
+  { keywords: ['who can vote', 'voting eligibility'],
+    answer: 'Only registered members who have been in the fellowship for at least 6 months can vote or be voted for.' },
+  { keywords: ['tenure', 'how long do leaders serve', 'term length'],
+    answer: 'Leaders hold office for one fellowship year, and are eligible for subsequent tenures up to a total of three years.' },
+  { keywords: ['conduct of leaders', 'rules for leaders', 'leader requirements'],
+    answer: 'After election, leaders must reside in UNIBEN/UBTH hostels or environs, be registered members of All Saints’ Chapel UNIBEN or an Anglican church in Benin City, and attend services there. Leaders may not bear titles like "Pastor" or "Evangelist" — ordained clergy cannot serve in leadership.' },
+  { keywords: ['exco members ministry group leaders', 'can exco lead a ministry group'],
+    answer: 'No — EXCO members may not also be ministry group leaders.' },
 
-  // ---------- Meetings & activities ----------
-  {
-    keywords: ['meeting', 'when do you meet', 'service time', 'fellowship meeting'],
-    answer: 'The fellowship meets on days set by the Executive Committee (never Sundays). Ministry groups meet on days agreed by their own members. Check the Announcements board for this semester\u2019s schedule.',
-  },
-  {
-    keywords: ['dss', 'discipleship study series'],
-    answer: 'The Discipleship Study Series (DSS) is a foundational study track members complete — it\u2019s also a requirement for anyone standing for a leadership position.',
-  },
-  {
-    keywords: ['asf sunday', 'gift day', 'music nite', 'annual fellowship meeting', 'afm', 'catch them young'],
-    answer: 'ASF holds recurring events through the year including AFM (Annual Fellowship Meeting), Catch Them Young, ASF Sunday, Gift Day and Music Nite. Watch the Announcements page for dates.',
-  },
+  // ---------- Meetings ----------
+  { keywords: ['meeting', 'when do you meet', 'service time', 'fellowship meeting'],
+    answer: 'The fellowship meets on days set by the EXCO, never on Sundays. Ministry groups meet on days their own members agree on.' },
+  { keywords: ['exco meeting', 'genco', 'combined meeting'],
+    answer: 'EXCO meets as frequently as possible (quorum: 2/3 of members; emergency meetings need 1/3). Combined Ugbowo/Ekehuan EXCO meetings happen at least twice a semester. GENCO (EXCO + ministry group leaders + Hall Reps) meets as the President directs.' },
+  { keywords: ['annual fellowship meeting', 'afm'],
+    answer: 'The Annual Fellowship Meeting (AFM) is where the President’s speech, the GS’s report, and the Financial Secretary’s account report are given, and elections are conducted. Its date is announced at least 2 fellowship meetings in advance.' },
 
-  // ---------- Giving ----------
-  {
-    keywords: ['give', 'donate', 'offering', 'tithe', 'fund', 'money'],
-    answer: 'ASF is supported by members\u2019 tithes and offerings, ASF Sunday collections, goodwill donations, and ministry group fundraising (like the Anglican Stewardship Ministry). Speak to the Financial Secretary for details.',
-  },
-
-  // ---------- Contact / admin ----------
-  {
-    keywords: ['contact', 'reach', 'ags', 'general secretary', 'admin', 'gs'],
-    answer: "You can reach the GS on WhatsApp at +234 915 923 4422, or the AGS at +234 808 473 4611. Both numbers and the fellowship WhatsApp group link are on the Leadership page.",
-  },
-  {
-    keywords: ['whatsapp', 'group link', 'whatsapp group', 'community', 'chat group'],
-    answer: "Yes — ASF has a fellowship WhatsApp group where day-to-day updates and community happen. You'll find the join link on the Leadership page.",
-  },
-  {
-    keywords: ['announcement', 'notice', 'where do i see updates'],
-    answer: 'Official notices from the GS/AGS are posted on the Announcements page — check there for the latest updates once you\u2019re signed in.',
-  },
-
-  // ---------- Site / technical ----------
-  {
-    keywords: ['forgot password', 'reset password', 'lost password', 'cant sign in', "can't log in"],
-    answer: 'There isn\u2019t a self-service password reset on the site yet — reach out to the GS or AGS directly and they can help sort out your account access from the Supabase admin side.',
-  },
-  {
-    keywords: ['edit my profile', 'update my details', 'change my department', 'wrong information'],
-    answer: 'Profile edits aren\u2019t self-service yet either — let the GS or AGS know what needs correcting and they can update it for you.',
-  },
-  {
-    keywords: ['is this site official', 'is this real', 'is this legit'],
-    answer: 'Yes — this site is run by the ASF UNIBEN/UBTH executive, with the GS and AGS as admins.',
-  },
-];
-
-const FAQ_FALLBACK = "I don't have an answer for that yet. Try asking about membership, a specific ministry group, meeting times, leadership, or giving — or reach out to the General Secretary / Assistant General Secretary directly.";
+  // ---------- Ministry groups ----------
+  { keywords: ['ministry group', 'ministry groups', 'what groups', 'units', 'how many ministry groups'],
+    answer: 'ASF has fifteen ministry groups and units, including prayer, outreach, discipleship (CPAM), music, drama, press, stewardship, children’s ministry, ushering, media, decoration, transport, and care & visitation.' },
+  { keywords: ['intercessory', 'prayer group', 'aim ministry'],
+    answer: 'The Anglican Intercessory Ministry (AIM) is involved in prayer and intercession, working with the Prayer Secretary to organise prayer programmes.' },
+  { keywords: ['campus and city outreach', 'outreach group', 'cco'],
+    answer: 'Campus & City Outreach (CCO) is involved in evangelism within and outside the campus.' },
+  { keywords: ['pastoral aid', 'cpam', 'discipleship unit', 'counselling unit', 'school visitation', 'abcdu'],
+    answer: 'The Church Pastoral Aid Ministry (CPAM) has four units: Discipleship Unit (teaches new converts and Bible study), Counselling Unit (trains counsellors, provides spiritual counselling), School Visitation Unit (evangelism/pastoral work in schools), and the Anglican Baptism, Confirmation & Discipleship Unit.' },
+  { keywords: ['children ministry', 'sunday school', 'acm'],
+    answer: 'The Anglican Children Ministry (ACM) visits primary schools for evangelism, affiliates with other children’s ministries for Sunday school teaching, and organises children’s evangelism activities.' },
+  { keywords: ['music ministry', 'choir', 'instrumentalist', 'amm'],
+    answer: 'The Anglican Music Ministry (AMM) is the fellowship’s choir — training instrumentalists, composing songs, and ministering in song on and off campus.' },
+  { keywords: ['drama ministry', 'adm', 'sketch', 'play'],
+    answer: 'The Anglican Drama Ministry (ADM) trains dramatists and writes/performs plays ministering the gospel on and off campus.' },
+  { keywords: ['press ministry', 'apm', 'library', 'tract', 'literature'],
+    answer: 'The Anglican Press Ministry (APM) spreads Christian teaching through tracts and study materials, cares for the fellowship library, raises funds through literature sales, gives members a writing platform, and encourages persecuted Christians through correspondence.' },
+  { keywords: ['stewardship ministry', 'asm', 'fundraising'],
+    answer: 'The Anglican Stewardship Ministry (ASM) raises money for the fellowship through the year, including resource exhibitions and recreational fundraising.' },
+  { keywords: ['ministry of helps', 'amh', 'hospital visit', 'orphanage'],
+    answer: 'The Anglican Ministry of Helps (AMH) visits hospitals, orphanages and remand homes to share the gospel, encourage growth in Christ, and provide material aid.' },
+  { keywords: ['masus', 'usher', 'sidemen', 'server'],
+    answer: 'The Ministry of Anglican Sidemen, Ushers & Ser
