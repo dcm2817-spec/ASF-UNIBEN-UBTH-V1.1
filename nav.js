@@ -7,6 +7,7 @@ async function initNav() {
   const ministryLink = document.getElementById('nav-ministry');
   const chatLink = document.getElementById('nav-chat');
   const announcementsLink = document.getElementById('nav-announcements');
+  const messagesLink = document.getElementById('nav-messages');
   const profileLink = document.getElementById('nav-profile');
   const adminLink = document.getElementById('nav-admin');
   const authSlot = document.getElementById('nav-auth-slot');
@@ -14,6 +15,7 @@ async function initNav() {
   if (ministryLink) ministryLink.style.display = user ? 'inline-block' : 'none';
   if (chatLink) chatLink.style.display = user ? 'inline-block' : 'none';
   if (announcementsLink) announcementsLink.style.display = user ? 'inline-block' : 'none';
+  if (messagesLink) messagesLink.style.display = user ? 'inline-block' : 'none';
   if (profileLink) profileLink.style.display = user ? 'inline-block' : 'none';
 
   if (user) {
