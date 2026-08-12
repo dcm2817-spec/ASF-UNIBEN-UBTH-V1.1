@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Announcements — ASF Uniben/UBTH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta property="og:title" content="Anglican Students' Fellowship — UNIBEN/UBTH">
+  <meta property="og:description" content="Arise, Shine! Christian fellowship for students of Uniben and UBTH.">
+  <meta property="og:image" content="https://YOUR-DOMAIN-HERE/logo.png">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="brand"><img src="logo.png" alt="ASF logo"> ASF</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="ministry-groups.html" id="nav-ministry" style="display:none">Ministry Groups</a>
+      <a href="announcements.html" id="nav-announcements" style="display:none">Announcements</a>
+      <a href="messages.html" id="nav-messages" style="display:none">Messages</a>
+      <a href="chat.html" id="nav-chat" style="display:none">Ask ASF</a>
+      <a href="profile.html" id="nav-profile" style="display:none">My Profile</a>
+      <a href="admin.html" id="nav-admin" style="display:none">Admin</a>
+      <span id="nav-auth-slot"></span>
+    </nav>
+  </header>
+
+  <div class="container" style="max-width:640px;">
+    <h1>Announcements</h1>
+    <p class="hint">Posted by the GS/AGS. Newest first.</p>
+    <div id="announcements-list" style="margin-top:1.5rem; display:flex; flex-direction:column; gap:0.9rem;">
+      <p class="hint">Loading…</p>
+    </div>
+  </div>
+
+  <footer>Anglican Students&rsquo; Fellowship — Uniben / UBTH &middot; Arise, Shine!</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-client.js"></script>
+  <script src="protect.js"></script>
+  <script src="nav.js"></script>
+  <script src="nav-hide.js"></script>
+  <script>
+    async function loadAnnouncements() {
+      const list = document.getElementById('announcements-list');
+      const { data, error } = await sb.from('announcements').select('*').order('created_at', { ascending: false });
+      if (error) {
+        list.innerHTML = '<p class="error-text">Could not load announcements right now.</p>';
+        return;
+      }
+      if (!data || data.length === 0) {
+        list.innerHTML = '<p class="hint">No announcements yet.</p>';
+        return;
+      }
+      list.innerHTML = data.map((a) => `
+        <div class="card">
+          <p style="font-weight:600; color:var(--oxblood); margin:0;">${a.title}</p>
+          <p style="margin:0.4rem 0 0.3rem;">${a.body}</p>
+          <p class="hint" style="margin:0; font-size:0.8rem;">${new Date(a.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+        </div>
+      `).join('');
+    }
+    loadAnnouncements();
+  </script>
+</body>
+</html>
