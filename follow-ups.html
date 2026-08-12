@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Follow-Ups — ASF Uniben/UBTH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta property="og:title" content="Follow-Ups — ASF Uniben/UBTH">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .status-pending { color: #b45309; font-weight: 600; }
+    .status-completed { color: #166534; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="brand"><img src="logo.png" alt="ASF logo"> ASF</a>
+    <nav>
+      <a href="dashboard.html">&larr; Dashboard</a>
+      <span id="nav-auth-slot"></span>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Follow-Ups</h1>
+    <p class="hint" id="scope-label">Loading&hellip;</p>
+
+    <div id="followups-list" style="margin-top:1rem;">
+      <p class="hint">Loading&hellip;</p>
+    </div>
+  </div>
+
+  <footer>Anglican Students&rsquo; Fellowship — Uniben / UBTH &middot; Arise, Shine!</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-client.js"></script>
+  <script>window.REQUIRE_ROLES = ['leader', 'admin'];</script>
+  <script src="protect.js"></script>
+  <script src="nav.js"></script>
+  <script src="nav-hide.js"></script>
+  <script src="toast.js"></script>
+  <script src="follow-ups.js"></script>
+</body>
+</html>
