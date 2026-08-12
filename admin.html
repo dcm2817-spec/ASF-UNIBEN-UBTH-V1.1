@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — ASF Uniben/UBTH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta property="og:title" content="Anglican Students' Fellowship — UNIBEN/UBTH">
+  <meta property="og:description" content="Arise, Shine! Christian fellowship for students of Uniben and UBTH.">
+  <meta property="og:image" content="https://YOUR-DOMAIN-HERE/logo.png">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="brand"><img src="logo.png" alt="ASF logo"> ASF</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="ministry-groups.html" id="nav-ministry" style="display:none">Ministry Groups</a>
+      <a href="announcements.html" id="nav-announcements" style="display:none">Announcements</a>
+      <a href="chat.html" id="nav-chat" style="display:none">Ask ASF</a>
+      <a href="profile.html" id="nav-profile" style="display:none">My Profile</a>
+      <a href="admin.html" id="nav-admin" style="display:none">Admin</a>
+      <span id="nav-auth-slot"></span>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Admin — GS / AGS</h1>
+    <p class="hint">Member records and announcements.</p>
+
+    <a href="attendance.html" class="btn btn-outline" style="display:inline-block; border-color:var(--oxblood); color:var(--oxblood); margin-top:0.5rem;">📋 Open Attendance</a>
+
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-top:2rem; flex-wrap:wrap; gap:0.5rem;">
+      <h2 style="margin:0;">Members (<span id="member-count">0</span>)</h2>
+      <button class="btn btn-solid" id="export-btn">Export CSV</button>
+    </div>
+
+    <div class="field-row" style="margin-top:1rem;">
+      <div>
+        <label for="filter-search">Search by name or department</label>
+        <input id="filter-search" placeholder="e.g. Marvellous or Geomatics">
+      </div>
+      <div>
+        <label for="filter-level">Filter by level</label>
+        <select id="filter-level">
+          <option value="">All levels</option>
+          <option>100</option><option>200</option><option>300</option>
+          <option>400</option><option>500</option><option>600</option>
+          <option>Postgraduate</option><option>Part-time</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card" id="birthdays-card" style="margin-top:1rem; display:none;">
+      <p style="font-weight:600; color:var(--oxblood); margin:0 0 0.4rem;">🎂 Birthdays this month</p>
+      <div id="birthdays-list"></div>
+    </div>
+
+    <div class="card" style="margin-top:1rem; overflow-x:auto; padding:0;">
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Email</th><th>Department</th><th>Level</th><th>Location</th><th>Ministry group</th><th>Role</th></tr>
+        </thead>
+        <tbody id="members-tbody">
+          <tr><td colspan="7" class="hint">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="margin-top:2.5rem;">Announcements</h2>
+    <form id="announcement-form" class="card">
+      <div class="field">
+        <input id="ann-title" placeholder="Title">
+      </div>
+      <div class="field">
+        <textarea id="ann-body" rows="3" placeholder="Announcement details…"></textarea>
+      </div>
+      <button class="btn btn-solid" type="submit">Post announcement</button>
+    </form>
+
+    <div id="announcements-list" style="margin-top:1rem; display:flex; flex-direction:column; gap:0.75rem;"></div>
+  </div>
+
+  <footer>Anglican Students&rsquo; Fellowship — Uniben / UBTH &middot; Arise, Shine!</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-client.js"></script>
+  <script>window.REQUIRE_ADMIN = true;</script>
+  <script src="protect.js"></script>
+  <script src="nav.js"></script>
+  <script src="nav-hide.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
