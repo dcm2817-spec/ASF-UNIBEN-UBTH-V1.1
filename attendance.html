@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance — ASF Uniben/UBTH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta property="og:title" content="Attendance — ASF Uniben/UBTH">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .member-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.65rem 0.9rem; border-bottom: 1px solid rgba(122,29,29,0.08);
+    }
+    .member-row:last-child { border-bottom: none; }
+    .present-btn {
+      border: 1px solid var(--oxblood); border-radius: 999px;
+      padding: 0.3rem 0.9rem; font-size: 0.85rem; background: white; color: var(--oxblood);
+      cursor: pointer;
+    }
+    .present-btn.marked { background: var(--oxblood); color: var(--parchment); }
+    .flag-missed { color: #b91c1c; font-weight: 600; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="brand"><img src="logo.png" alt="ASF logo"> ASF</a>
+    <nav>
+      <a href="admin.html">&larr; Back to Admin</a>
+      <span id="nav-auth-slot"></span>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Attendance</h1>
+    <p class="hint">Check-in for services, and a simple attendance history per member.</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" id="tab-checkin" type="button">Check-in</button>
+      <button class="tab-btn" id="tab-analytics" type="button">Analytics</button>
+    </div>
+
+    <!-- CHECK-IN TAB -->
+    <div id="checkin-panel">
+      <div class="card">
+        <div class="field-row">
+          <div>
+            <label for="event-type">Service</label>
+            <select id="event-type">
+              <option value="Wednesday Service">Wednesday Service</option>
+              <option value="Friday Service">Friday Service</option>
+              <option value="Sunday Prayer Meeting">Sunday Prayer Meeting (optional)</option>
+              <option value="Special Saturday">Special Saturday</option>
+            </select>
+          </div>
+          <div>
+            <label for="event-date">Date</label>
+            <input id="event-date" type="date">
+          </div>
+        </div>
+        <button class="btn btn-solid" id="load-checkin-btn" style="margin-top:0.5rem;">Start check-in</button>
+      </div>
+
+      <p class="hint" id="checkin-summary" style="margin-top:1rem;"></p>
+      <div class="card" id="checkin-list" style="margin-top:0.5rem; padding:0; display:none;"></div>
+    </div>
+
+    <!-- ANALYTICS TAB -->
+    <div id="analytics-panel" style="display:none;">
+      <p class="hint">"Missed last 3" checks only Wednesday and Friday services (Sunday Prayer is optional, Saturdays are irregular).</p>
+      <div class="card" style="margin-top:1rem; overflow-x:auto; padding:0;">
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Total attended</th><th>Last attended</th><th>Attendance %</th><th>Status</th></tr>
+          </thead>
+          <tbody id="analytics-tbody">
+            <tr><td colspan="5" class="hint">Loading&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer>Anglican Students&rsquo; Fellowship — Uniben / UBTH &middot; Arise, Shine!</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="supabase-client.js"></script>
+  <script>window.REQUIRE_ADMIN = true;</script>
+  <script src="protect.js"></script>
+  <script src="nav.js"></script>
+  <script src="nav-hide.js"></script>
+  <script src="attendance.js"></script>
+</body>
+</html>
