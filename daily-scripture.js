@@ -1,0 +1,17 @@
+const DAILY_SCRIPTURES = [
+  { text: 'Arise, shine, for your light has come, and the glory of the LORD rises upon you.', ref: 'Isaiah 60:1' },
+  { text: 'Being confident of this, that He who began a good work in you will carry it on to completion until the day of Christ Jesus.', ref: 'Philippians 1:6' },
+  { text: 'I can do all things through Christ who strengthens me.', ref: 'Philippians 4:13' },
+  { text: 'For God so loved the world that He gave His one and only Son, that whoever believes in Him shall not perish but have eternal life.', ref: 'John 3:16' },
+  { text: 'But God demonstrates His own love for us in this: While we were still sinners, Christ died for us.', ref: 'Romans 5:8' },
+  { text: 'Trust in the LORD with all your heart and lean not on your own understanding.', ref: 'Proverbs 3:5' },
+  { text: 'Lord, who shall dwell in thy tabernacle? who shall rest upon thy holy hill?', ref: 'Psalm 15:1' },
+  { text: 'Come labour on. Who dares stand idle, on the harvest plain?', ref: 'Come Labour On, Hymns A&M 339' },
+  { text: 'And let us not grow weary of doing good, for in due season we will reap, if we do not give up.', ref: 'Galatians 6:9' },
+  { text: 'The LORD is my shepherd; I shall not want.', ref: 'Psalm 23:1' },
+  { text: 'Rejoice in the Lord always. I will say it again: Rejoice!', ref: 'Philippians 4:4' },
+  { text: 'Study to shew thyself approved unto God, a workman that needeth not to be ashamed.', ref: '2 Timothy 2:15' },
+  { text: 'For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you.', ref: 'Jeremiah 29:11' },
+  { text: 'Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.', ref: 'Matthew 7:7' },
+  { text: 'Let your light so shine before men, that they may see your good works, and glorify your Father in heaven.', ref: 'Matthew 5:16' },
+];
