@@ -50,14 +50,14 @@
   <script>
     async function render() {
       const { data: { session } } = await sb.auth.getSession();
-      let myGroup = null;
+      let myGroups = [];
       if (session) {
-        const { data } = await sb.from('members').select('ministry_group').eq('id', session.user.id).single();
-        myGroup = data ? data.ministry_group : null;
+        const { data } = await sb.from('members').select('ministry_group, ministry_group_2').eq('id', session.user.id).single();
+        myGroups = data ? [data.ministry_group, data.ministry_group_2].filter(Boolean) : [];
       }
 
       document.getElementById('groups-list').innerHTML = MINISTRY_GROUPS.map((g) => {
-        const isMine = myGroup && myGroup === g.name;
+        const isMine = myGroups.includes(g.name);
         return `
         <div class="card" style="${isMine ? 'border-color:var(--sunrise); border-width:2px;' : ''}">
           <p class="hint" style="color:var(--sunrise); text-transform:uppercase; letter-spacing:0.05em; font-weight:600; margin-bottom:0.2rem;">
